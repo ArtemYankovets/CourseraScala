@@ -1,0 +1,36 @@
+sbt sbtVersion
+sbt about
+
+IDEA plugin:
+	- Scala
+
+Using the Scala REPL
+	> console
+	[info] Starting scala interpreter...
+
+	scala>
+============================================
+class Example{} - это сущьность (аналог экземпляра класса в java)
+object Example{} - это объект (аналог класса в java)
+
+если не указан модификатор доступа, то по умолчанию он public
+
+все методы в object - статические
+
+запись выполняется сразу имя потом тип
+x: Int
+тип Unit анналогично void в java
+def f(x: INt, y: Int): Int = x + y
+
+val - означает не мутирующее поле (value)
+var - щзначает мутирующее поле (variable)
+
+val arr: Array[Int] = Array(0, 1, 2, 3)
+var elem2: Int = arr(2)
+
+если унаследоваться от App то это будет объект с точко входа
+object Demo extend App {} 
+
+trait - это синоним интрерфейса
+
+def - задает либо методы либо функции
